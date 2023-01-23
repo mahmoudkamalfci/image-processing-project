@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.shrapResizeImage = void 0;
 const sharp_1 = __importDefault(require("sharp"));
 const shrapResizeImage = (imagePath, imageName, width, height, thumbnailPath) => __awaiter(void 0, void 0, void 0, function* () {
-    (yield (0, sharp_1.default)(imagePath + `/${imageName}.jpg`)
+    yield ((0, sharp_1.default)(imagePath + `/${imageName}.jpg`)
         .resize(width, height)
         .toFile(thumbnailPath + `/${imageName}-${width}-${height}.jpg`));
 });

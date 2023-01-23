@@ -7,7 +7,7 @@ export const shrapResizeImage = async (
   height: number,
   thumbnailPath: string
 ): Promise<void> => {
-  (await sharp(imagePath + `/${imageName}.jpg`)
+  await ( sharp(imagePath + `/${imageName}.jpg`)
     .resize(width, height)
     .toFile(thumbnailPath + `/${imageName}-${width}-${height}.jpg`)) as unknown;
 };

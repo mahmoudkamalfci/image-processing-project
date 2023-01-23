@@ -11,7 +11,4 @@ app.use('/api', index_1.default);
 app.listen(port, () => {
     console.log(`server started at localhost:` + port);
 });
-const myFunc = (num) => {
-    return num * num;
-};
-exports.default = myFunc;
+exports.default = app;

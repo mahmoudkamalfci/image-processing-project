@@ -7,7 +7,7 @@ const express_1 = __importDefault(require("express"));
 const students_1 = __importDefault(require("./api/students"));
 const routes = express_1.default.Router();
 routes.get('/', (req, res) => {
-    res.send('Hello, world! from router ');
+    res.send('Hello, world! fromf router ');
 });
-routes.use('/students', students_1.default);
+routes.use('/images', students_1.default);
 exports.default = routes;
